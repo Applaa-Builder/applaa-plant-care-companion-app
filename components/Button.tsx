@@ -115,7 +115,7 @@ export default function Button({
         />
       ) : (
         <>
-          {icon && <>{icon}</>}
+          {icon}
           <Text style={[
             styles.text,
             getTextStyle(),

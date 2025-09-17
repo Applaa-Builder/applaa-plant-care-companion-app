@@ -63,7 +63,7 @@ export default function HomeScreen() {
           />
         </View>
       ) : (
-        <>
+        <View>
           {plantsNeedingWater.length > 0 && (
             <View style={styles.section}>
               <View style={styles.sectionHeader}>
@@ -134,7 +134,7 @@ export default function HomeScreen() {
               </ScrollView>
             </View>
           )}
-        </>
+        </View>
       )}
     </ScrollView>
   );

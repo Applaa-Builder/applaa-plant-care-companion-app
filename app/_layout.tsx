@@ -51,9 +51,7 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-    <>
-      <StatusBar style="dark" />
-      <Stack
+    <Stack
         screenOptions={{
           headerBackTitle: "Back",
           headerStyle: {
@@ -68,6 +66,7 @@ function RootLayoutNav() {
           },
         }}
       >
+      <StatusBar style="dark" />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen 
           name="plant/[id]" 
@@ -83,7 +82,6 @@ function RootLayoutNav() {
             headerBackTitle: "Tips",
           }} 
         />
-      </Stack>
-    </>
+    </Stack>
   );
 }

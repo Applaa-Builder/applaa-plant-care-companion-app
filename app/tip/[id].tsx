@@ -18,7 +18,7 @@ export default function TipDetailScreen() {
   }
 
   return (
-    <>
+    <View style={{ flex: 1 }}>
       <Stack.Screen options={{ title: tip.title }} />
       
       <ScrollView style={styles.container}>
@@ -42,7 +42,7 @@ export default function TipDetailScreen() {
           </Text>
         </View>
       </ScrollView>
-    </>
+    </View>
   );
 }
 

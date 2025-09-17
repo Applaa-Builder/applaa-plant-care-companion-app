@@ -108,7 +108,7 @@ export default function PlantDetailScreen() {
   };
 
   return (
-    <>
+    <View style={{ flex: 1 }}>
       <Stack.Screen 
         options={{ 
           title: (userPlant as UserPlant)?.nickname || plant.name,
@@ -428,7 +428,7 @@ export default function PlantDetailScreen() {
           />
         )}
       </ScrollView>
-    </>
+    </View>
   );
 }
 
